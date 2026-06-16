@@ -531,11 +531,11 @@ footer {
     </div>
   </div>
   <ul class="nav-links">
-    <li><a href="#women" class="women-link" data-ar="قسم السيدات" data-en="Women">قسم السيدات</a></li>
+    <li><a href="#contact" data-ar="تواصل" data-en="Contact">تواصل</a></li>
     <li><a href="#schedule" data-ar="المواعيد" data-en="Schedule">المواعيد</a></li>
+    <li><a href="#women" class="women-link" data-ar="قسم السيدات" data-en="Women">قسم السيدات</a></li>
     <li><a href="#trainers" data-ar="المدربات" data-en="Coaches">المدربات</a></li>
     <li><a href="#location" data-ar="الفروع" data-en="Locations">الفروع</a></li>
-    <li><a href="#contact" data-ar="تواصل" data-en="Contact">تواصل</a></li>
   </ul>
   <a href="#contact" class="nav-cta" data-ar="احجز الآن" data-en="Book Now">احجز الآن</a>
 </nav>
@@ -584,6 +584,105 @@ footer {
     <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0,40 C360,80 720,0 1080,44 C1260,64 1380,52 1440,48 L1440,80 L0,80 Z" fill="#ffffff"/>
     </svg>
+  </div>
+</section>
+
+<!-- CONTACT & BOOKING -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-eyebrow" data-ar="📞 تواصلي معنا" data-en="📞 Get in Touch">📞 تواصلي معنا</div>
+      <h2 class="section-title" data-ar="نحن هنا لك" data-en="We're Here for You">نحن هنا لك</h2>
+      <p class="section-desc" data-ar="تواصلي معنا عبر الهاتف أو واتساب أو فيسبوك. الحجز أونلاين فقط." data-en="Reach us by phone, WhatsApp, or Facebook. Booking is online only.">تواصلي معنا عبر الهاتف أو واتساب أو فيسبوك. الحجز أونلاين فقط.</p>
+    </div>
+    <div class="contact-grid reveal">
+      <a href="tel:+201023968626" class="contact-card reveal reveal-d1">
+        <div class="contact-icon ci-phone">📞</div>
+        <div>
+          <div class="contact-info-label" data-ar="اتصال مباشر" data-en="Direct Call">اتصال مباشر</div>
+          <div class="contact-info-val">01023968626</div>
+          <div class="contact-info-sub" data-ar="للاستفسار" data-en="For inquiries">للاستفسار</div>
+        </div>
+      </a>
+      <a href="https://wa.me/201023968626" target="_blank" class="contact-card reveal reveal-d2">
+        <div class="contact-icon ci-wa">💬</div>
+        <div>
+          <div class="contact-info-label" data-ar="واتساب" data-en="WhatsApp">واتساب</div>
+          <div class="contact-info-val" data-ar="01023968626" data-en="01023968626">01023968626</div>
+          <div class="contact-info-sub" data-ar="للحجز والاستفسار" data-en="Booking & inquiries">للحجز والاستفسار</div>
+        </div>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=61575734795291" target="_blank" class="contact-card reveal reveal-d3">
+        <div class="contact-icon ci-fb">📘</div>
+        <div>
+          <div class="contact-info-label" data-ar="فيسبوك" data-en="Facebook">فيسبوك</div>
+          <div class="contact-info-val" data-ar="الصفحة الرسمية" data-en="Official Page">الصفحة الرسمية</div>
+          <div class="contact-info-sub" data-ar="آخر التحديثات والأخبار" data-en="Latest updates & news">آخر التحديثات والأخبار</div>
+        </div>
+      </a>
+      <a href="https://chat.whatsapp.com/JRvkKtY1YDMLFfdlSR4ZZh?mode=gi_t" target="_blank" class="contact-card reveal reveal-d4">
+        <div class="contact-icon ci-group">👥</div>
+        <div>
+          <div class="contact-info-label" data-ar="جروب واتساب" data-en="WhatsApp Group">جروب واتساب</div>
+          <div class="contact-info-val" data-ar="انضمي للمجموعة" data-en="Join the Group">انضمي للمجموعة</div>
+          <div class="contact-info-sub" data-ar="تحديثات يومية" data-en="Daily updates">تحديثات يومية</div>
+        </div>
+      </a>
+    </div>
+    <div class="booking-section reveal">
+      <div>
+        <div class="booking-title" data-ar="📝 احجزي مكانك الآن" data-en="📝 Book Your Spot Now">📝 احجزي مكانك الآن</div>
+        <p class="booking-desc" data-ar="أرسلي بياناتك عبر واتساب لتجهيز كارت الدخول: الاسم · السن · المستوى · الموعد المفضل." data-en="Send your details via WhatsApp to prepare your entry card: Name · Age · Level · Preferred time.">أرسلي بياناتك عبر واتساب لتجهيز كارت الدخول: الاسم · السن · المستوى · الموعد المفضل.</p>
+        <form class="booking-form" onsubmit="sendBooking(event)">
+          <div>
+            <label class="field-label" for="bkName" data-ar="الاسم" data-en="Name">الاسم</label>
+            <input class="field-input" id="bkName" type="text" placeholder="اكتبي الاسم" required>
+          </div>
+          <div>
+            <label class="field-label" for="bkAge" data-ar="السن" data-en="Age">السن</label>
+            <input class="field-input" id="bkAge" type="text" placeholder="السن" required>
+          </div>
+          <div>
+            <label class="field-label" for="bkLevel" data-ar="المستوى" data-en="Level">المستوى</label>
+            <select class="field-input" id="bkLevel" required>
+              <option value="" data-ar="اختاري" data-en="Select">اختاري</option>
+              <option value="مبتدئ" data-ar="مبتدئ" data-en="Beginner">مبتدئ</option>
+              <option value="متوسط" data-ar="متوسط" data-en="Intermediate">متوسط</option>
+              <option value="متقدم" data-ar="متقدم" data-en="Advanced">متقدم</option>
+            </select>
+          </div>
+          <div>
+            <label class="field-label" for="bkTime" data-ar="الموعد المفضل" data-en="Preferred Time">الموعد المفضل</label>
+            <input class="field-input" id="bkTime" type="text" placeholder="مثال: جرين هيلز 8 صباحاً" required>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn-solid" data-ar="إرسال عبر واتساب ↗" data-en="Send via WhatsApp ↗">إرسال عبر واتساب ↗</button>
+            <a href="tel:+201023968626" class="btn-ghost" data-ar="اتصال مباشر" data-en="Call Now">اتصال مباشر</a>
+          </div>
+        </form>
+        <p style="font-size:12px;color:rgba(255,255,255,0.3);margin-top:16px" data-ar="ملاحظة: SheSwim Academy أكاديمية مستقلة غير تابعة للنادي أو المدرسة." data-en="Note: SheSwim Academy is an independent academy, not affiliated with the club or school.">ملاحظة: SheSwim Academy أكاديمية مستقلة غير تابعة للنادي أو المدرسة.</p>
+      </div>
+      <div class="pricing-panel">
+        <div class="pricing-head" data-ar="💳 قيمة الاشتراك" data-en="💳 Subscription Fees">💳 قيمة الاشتراك</div>
+        <div class="price-row">
+          <span class="price-name" data-ar="جروب (5 أفراد)" data-en="Group (5 people)">جروب (5 أفراد)</span>
+          <span class="price-val" data-ar="950 جنيه" data-en="EGP 950">950 جنيه</span>
+        </div>
+        <div class="price-row">
+          <span class="price-name" data-ar="برايفت (1 فرد)" data-en="Private (1 person)">برايفت (1 فرد)</span>
+          <span class="price-val" data-ar="2200 جنيه" data-en="EGP 2,200">2200 جنيه</span>
+        </div>
+        <div class="price-row">
+          <span class="price-name" data-ar="برايفت 2 (فردان)" data-en="Private (2 people)">برايفت 2 (فردان)</span>
+          <span class="price-val" data-ar="3200 جنيه" data-en="EGP 3,200">3200 جنيه</span>
+        </div>
+        <div class="price-row">
+          <span class="price-name" data-ar="جروب 3 (3 أفراد)" data-en="Group (3 people)">جروب 3 (3 أفراد)</span>
+          <span class="price-val" data-ar="1300 جنيه" data-en="EGP 1,300">1300 جنيه</span>
+        </div>
+        <p class="price-note" data-ar="جميع الأسعار شهرية · الحجز أونلاين فقط عبر واتساب · للاستفسار اتصلي بنا." data-en="All prices are monthly · Online booking via WhatsApp only · Call us for inquiries.">جميع الأسعار شهرية · الحجز أونلاين فقط عبر واتساب · للاستفسار اتصلي بنا.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -893,114 +992,18 @@ footer {
   </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact">
-  <div class="container">
-    <div class="section-header reveal">
-      <div class="section-eyebrow" data-ar="📞 تواصلي معنا" data-en="📞 Get in Touch">📞 تواصلي معنا</div>
-      <h2 class="section-title" data-ar="نحن هنا لك" data-en="We're Here for You">نحن هنا لك</h2>
-      <p class="section-desc" data-ar="تواصلي معنا عبر الهاتف أو واتساب أو فيسبوك. الحجز أونلاين فقط." data-en="Reach us by phone, WhatsApp, or Facebook. Booking is online only.">تواصلي معنا عبر الهاتف أو واتساب أو فيسبوك. الحجز أونلاين فقط.</p>
-    </div>
-    <div class="contact-grid reveal">
-      <a href="tel:+201023968626" class="contact-card reveal reveal-d1">
-        <div class="contact-icon ci-phone">📞</div>
-        <div>
-          <div class="contact-info-label" data-ar="اتصال مباشر" data-en="Direct Call">اتصال مباشر</div>
-          <div class="contact-info-val">01023968626</div>
-          <div class="contact-info-sub" data-ar="للاستفسار" data-en="For inquiries">للاستفسار</div>
-        </div>
-      </a>
-      <a href="https://wa.me/201023968626" target="_blank" class="contact-card reveal reveal-d2">
-        <div class="contact-icon ci-wa">💬</div>
-        <div>
-          <div class="contact-info-label" data-ar="واتساب" data-en="WhatsApp">واتساب</div>
-          <div class="contact-info-val" data-ar="01023968626" data-en="01023968626">01023968626</div>
-          <div class="contact-info-sub" data-ar="للحجز والاستفسار" data-en="Booking & inquiries">للحجز والاستفسار</div>
-        </div>
-      </a>
-      <a href="https://www.facebook.com/profile.php?id=61575734795291" target="_blank" class="contact-card reveal reveal-d3">
-        <div class="contact-icon ci-fb">📘</div>
-        <div>
-          <div class="contact-info-label" data-ar="فيسبوك" data-en="Facebook">فيسبوك</div>
-          <div class="contact-info-val" data-ar="الصفحة الرسمية" data-en="Official Page">الصفحة الرسمية</div>
-          <div class="contact-info-sub" data-ar="آخر التحديثات والأخبار" data-en="Latest updates & news">آخر التحديثات والأخبار</div>
-        </div>
-      </a>
-      <a href="https://chat.whatsapp.com/JRvkKtY1YDMLFfdlSR4ZZh?mode=gi_t" target="_blank" class="contact-card reveal reveal-d4">
-        <div class="contact-icon ci-group">👥</div>
-        <div>
-          <div class="contact-info-label" data-ar="جروب واتساب" data-en="WhatsApp Group">جروب واتساب</div>
-          <div class="contact-info-val" data-ar="انضمي للمجموعة" data-en="Join the Group">انضمي للمجموعة</div>
-          <div class="contact-info-sub" data-ar="تحديثات يومية" data-en="Daily updates">تحديثات يومية</div>
-        </div>
-      </a>
-    </div>
-    <div class="booking-section reveal">
-      <div>
-        <div class="booking-title" data-ar="📝 احجزي مكانك الآن" data-en="📝 Book Your Spot Now">📝 احجزي مكانك الآن</div>
-        <p class="booking-desc" data-ar="أرسلي بياناتك عبر واتساب لتجهيز كارت الدخول: الاسم · السن · المستوى · الموعد المفضل." data-en="Send your details via WhatsApp to prepare your entry card: Name · Age · Level · Preferred time.">أرسلي بياناتك عبر واتساب لتجهيز كارت الدخول: الاسم · السن · المستوى · الموعد المفضل.</p>
-        <form class="booking-form" onsubmit="sendBooking(event)">
-          <div>
-            <label class="field-label" for="bkName" data-ar="الاسم" data-en="Name">الاسم</label>
-            <input class="field-input" id="bkName" type="text" placeholder="اكتبي الاسم" required>
-          </div>
-          <div>
-            <label class="field-label" for="bkAge" data-ar="السن" data-en="Age">السن</label>
-            <input class="field-input" id="bkAge" type="text" placeholder="السن" required>
-          </div>
-          <div>
-            <label class="field-label" for="bkLevel" data-ar="المستوى" data-en="Level">المستوى</label>
-            <select class="field-input" id="bkLevel" required>
-              <option value="" data-ar="اختاري" data-en="Select">اختاري</option>
-              <option value="مبتدئ" data-ar="مبتدئ" data-en="Beginner">مبتدئ</option>
-              <option value="متوسط" data-ar="متوسط" data-en="Intermediate">متوسط</option>
-              <option value="متقدم" data-ar="متقدم" data-en="Advanced">متقدم</option>
-            </select>
-          </div>
-          <div>
-            <label class="field-label" for="bkTime" data-ar="الموعد المفضل" data-en="Preferred Time">الموعد المفضل</label>
-            <input class="field-input" id="bkTime" type="text" placeholder="مثال: جرين هيلز 8 صباحاً" required>
-          </div>
-          <div class="form-actions">
-            <button type="submit" class="btn-solid" data-ar="إرسال عبر واتساب ↗" data-en="Send via WhatsApp ↗">إرسال عبر واتساب ↗</button>
-            <a href="tel:+201023968626" class="btn-ghost" data-ar="اتصال مباشر" data-en="Call Now">اتصال مباشر</a>
-          </div>
-        </form>
-        <p style="font-size:12px;color:rgba(255,255,255,0.3);margin-top:16px" data-ar="ملاحظة: SheSwim Academy أكاديمية مستقلة غير تابعة للنادي أو المدرسة." data-en="Note: SheSwim Academy is an independent academy, not affiliated with the club or school.">ملاحظة: SheSwim Academy أكاديمية مستقلة غير تابعة للنادي أو المدرسة.</p>
-      </div>
-      <div class="pricing-panel">
-        <div class="pricing-head" data-ar="💳 قيمة الاشتراك" data-en="💳 Subscription Fees">💳 قيمة الاشتراك</div>
-        <div class="price-row">
-          <span class="price-name" data-ar="جروب (5 أفراد)" data-en="Group (5 people)">جروب (5 أفراد)</span>
-          <span class="price-val" data-ar="950 جنيه" data-en="EGP 950">950 جنيه</span>
-        </div>
-        <div class="price-row">
-          <span class="price-name" data-ar="برايفت (1 فرد)" data-en="Private (1 person)">برايفت (1 فرد)</span>
-          <span class="price-val" data-ar="2200 جنيه" data-en="EGP 2,200">2200 جنيه</span>
-        </div>
-        <div class="price-row">
-          <span class="price-name" data-ar="برايفت 2 (فردان)" data-en="Private (2 people)">برايفت 2 (فردان)</span>
-          <span class="price-val" data-ar="3200 جنيه" data-en="EGP 3,200">3200 جنيه</span>
-        </div>
-        <div class="price-row">
-          <span class="price-name" data-ar="جروب 3 (3 أفراد)" data-en="Group (3 people)">جروب 3 (3 أفراد)</span>
-          <span class="price-val" data-ar="1300 جنيه" data-en="EGP 1,300">1300 جنيه</span>
-        </div>
-        <p class="price-note" data-ar="جميع الأسعار شهرية · الحجز أونلاين فقط عبر واتساب · للاستفسار اتصلي بنا." data-en="All prices are monthly · Online booking via WhatsApp only · Call us for inquiries.">جميع الأسعار شهرية · الحجز أونلاين فقط عبر واتساب · للاستفسار اتصلي بنا.</p>
-      </div>
-    </div>
-  </div>
-</section>
+
 
 <!-- FOOTER -->
 <footer id="footer">
   <div class="footer-copy" data-ar="© 2026 أكاديمية SheSwim — Created by Omar Essa" data-en="© 2026 SheSwim Academy — Created by Omar Essa">© 2026 أكاديمية SheSwim — Created by Omar Essa</div>
   <div class="footer-links">
     <a href="#hero" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
-    <a href="#women" data-ar="قسم السيدات" data-en="Women's">قسم السيدات</a>
-    <a href="#schedule" data-ar="المواعيد" data-en="Schedule">المواعيد</a>
-    <a href="#trainers" data-ar="المدربات" data-en="Coaches">المدربات</a>
     <a href="#contact" data-ar="التواصل" data-en="Contact">التواصل</a>
+    <a href="#schedule" data-ar="المواعيد" data-en="Schedule">المواعيد</a>
+    <a href="#women" data-ar="قسم السيدات" data-en="Women's">قسم السيدات</a>
+    <a href="#trainers" data-ar="المدربات" data-en="Coaches">المدربات</a>
+    <a href="#location" data-ar="الفروع" data-en="Locations">الفروع</a>
   </div>
 </footer>
 
